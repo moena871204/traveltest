@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+
+header ul{
+  display: flex;
+  justify-content: end;
+  padding-left: 16px;
+}
+header li{
+  list-style: none;
+  width: 144px;
+  height: 86px;
+  text-align: center;
+}
+header a{
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px 2px 3px gray;
+  line-height: 86px;
+}
+header{
+  background: url(image/kame.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+header div{
+  font-size: 64px;
+  color: white;
+  text-shadow: blue 1px 0 50px;
+  text-align: center;
+  padding-top: 80px;
+}
+header li:hover{
+  background: url(image/earth.avif);
+  background-size: cover;
+  background-position: center;
+}
+
+/* main */
+
+section{
+  margin-top: 16px;
+  background: url(image/mountain.jpg);
+  background-attachment: fixed; /*スクロール時に固定*/
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+}
+h2{
+  color: white;
+  font-size: 120px;
+  letter-spacing: 5px;
+  text-shadow: 1px 0 40px blue;
+  text-align: center;
+  padding-top: 5%;
+  animation: fuwafuwa 0.8s infinite alternate;
+}
+@keyframes fuwafuwa{
+  50%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translatey(0);
+  }
+}
+h3{
+  padding-top: 64px;
+  text-align: center;
+}
+.container{
+  padding-top: 64px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.content{
+  width: 400px;
+  box-shadow: 0 0 10px gray;
+}
+.content img{
+  width: 400px;
+  height: 350px;
+}
+.content img:hover{
+  box-shadow: 0 0 10px gray;
+}
+.text{
+  height: 200px;
+  padding: 24px;
+}
+small{
+font-size: 10px;
+}
+.text p{
+  font-weight: bold;
+  padding-top: 16px;
+}
+.date{
+  display: block;
+  padding-top: 16px;
+  text-align: end;
+}
+#location{
+  background: url(image/location.jpg);
+  background-attachment: fixed; /*スクロール時に固定*/
+  background-size: cover;
+  background-position: center;
+}
+.map{
+  text-align: center;
+  padding-top: 64px;
+}
+.googlemap{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.map p{
+  font-size: 14px;
+  padding-top: 12px;
+}
+.otoiawase{
+  text-align: center;
+  background: white;
+}
+.otoiawase p{
+  display: inline-block;
+  padding: 8px 80px;
+  border-radius: 40px;
+  background-color: aqua;
+  animation: fuwafuwa 0.8s infinite alternate;
+}
+form{
+  height: 100vh;
+  background: linear-gradient(to right, rgb(40, 107, 252), rgb(255, 32, 207));
+}
+.formtext{
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+.formtext p{
+  font-size: 24px;
+  font-weight: bold;
+  padding: 32px 0;
+}
+.formtext input{
+  width: 100%;
+  height: 40px;
+}
+textarea{
+  width: 100%;
+  height: 50px;
+  padding: 10px 0;
+}
+button{
+  display: block;
+  margin: 24px auto 0;
+  color: white;
+  font-weight: bold;
+  padding: 8px 100px;
+  background: linear-gradient(to right, rgb(40, 107, 252), rgb(255, 32, 207))
+}
+button:hover{
+  background: rgb(255, 32, 207);
+}
+
+/* footer */
+
+footer{
+  /* font-size: 8px; */
+  height: 180px;
+  text-align: center;
+  padding-top: 8px;
+}
